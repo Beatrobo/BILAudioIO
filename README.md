@@ -2,7 +2,7 @@ BILAudioIO
 =================
   
 ### Dependency  
-無し  
+None  
   
 ### Require Framework  
 - `AudioToolbox.framework`  
@@ -11,5 +11,6 @@ BILAudioIO
   
 * * *
   
-BIL は Beatrobo Inc Library から取ってる。  
-PlugAir などで使われている SoftModem から切り出した Audio i/O 部分。  
+BIL is "Beatrobo Inc Library" prefix.  
+  
+PlugAir などで使われている SoftModem から切り出した Audio I/O 部分。  
