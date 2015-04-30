@@ -58,34 +58,4 @@
     return asbd;
 }
 
-+ (AudioStreamBasicDescription)takeiSoftModemModulatorWithSampleRate:(float)sampleRate
-{
-    UInt32 byteSize = sizeof(Float32);
-    AudioStreamBasicDescription asbd;
-    asbd.mSampleRate       = sampleRate;
-    asbd.mFormatID         = kAudioFormatLinearPCM;
-    asbd.mFormatFlags      = kAudioFormatFlagsNativeFloatPacked | kAudioFormatFlagIsNonInterleaved;
-    asbd.mBytesPerPacket   = byteSize;
-    asbd.mFramesPerPacket  = 1;
-    asbd.mBytesPerFrame    = byteSize;
-    asbd.mChannelsPerFrame = 2;
-    asbd.mBitsPerChannel   = 8 * byteSize;
-    return asbd;
-}
-
-+ (AudioStreamBasicDescription)kawajiriSoftModemModulatorWithSampleRate:(float)sampleRate
-{
-    UInt32 byteSize = sizeof(int16_t);
-    AudioStreamBasicDescription asbd;
-    asbd.mSampleRate       = sampleRate;
-    asbd.mFormatID         = kAudioFormatLinearPCM;
-    asbd.mFormatFlags      = kAudioFormatFlagIsPacked | kAudioFormatFlagIsSignedInteger | kAudioFormatFlagIsNonInterleaved;
-    asbd.mBytesPerPacket   = byteSize;
-    asbd.mFramesPerPacket  = 1;
-    asbd.mBytesPerFrame    = byteSize;
-    asbd.mChannelsPerFrame = 2;
-    asbd.mBitsPerChannel   = 8 * byteSize;
-    return asbd;
-}
-
 @end

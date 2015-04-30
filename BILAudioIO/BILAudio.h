@@ -14,9 +14,4 @@
 + (AudioStreamBasicDescription)physicalInputWithSampleRate:(float)sampleRate;
 + (AudioStreamBasicDescription)physicalOutputWithSampleRate:(float)sampleRate;
 
-/*
-+ (AudioStreamBasicDescription)takeiSoftModemModulatorWithSampleRate:(float)sampleRate;
-+ (AudioStreamBasicDescription)kawajiriSoftModemModulatorWithSampleRate:(float)sampleRate;
- */
-
 @end
