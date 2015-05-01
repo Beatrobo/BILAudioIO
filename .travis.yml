@@ -3,5 +3,8 @@ language: objective-c
 before_install:
   - gem install cocoapods
 
+before_script:
+  - pod repo update
+
 script:
   - pod lib lint --sources='https://github.com/CocoaPods/Specs'
