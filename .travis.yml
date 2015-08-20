@@ -3,13 +3,12 @@ language: objective-c
 cache:
   directories:
     - $HOME/.cocoapods
-    - vendor/bundle
 
 before_install:
-  - bundle install --path=vendor/bundle
+  - gem install cocoapods --no-ri --no-rdoc
 
 before_script:
-  - bundle exec pod repo update
+  - pod setup > /dev/null 2>&1
 
 script:
-  - bundle exec pod lib lint --sources='https://github.com/CocoaPods/Specs'
+  - pod lib lint --sources='https://github.com/CocoaPods/Specs'
