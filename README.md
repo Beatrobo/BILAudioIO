@@ -6,21 +6,11 @@ BILAudioIO
 [![Pod Platform](http://img.shields.io/cocoapods/p/BILAudioIO.svg?style=flat-square)](http://cocoadocs.org/docsets/BILAudioIO/)
 [![Pod License](http://img.shields.io/cocoapods/l/BILAudioIO.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
-### Dependency
-* None
-
-### Require Framework
-* `AudioToolbox.framework`
-* `AVFoundation.framework` (iOS only)
-* `AudioUnit.framework` (OSX only)
-
 # Description
 
-BIL is "Beatrobo Inc Library" prefix.
+This repository has been move to [`DPAudioIO`](https://github.com/dnpp73/DPAudioIO)
 
-Abstract Audio I/O for iOS and OSX
-
-#LICENSE
+# LICENSE
 
 Copyright (c) 2015 Beatrobo, Inc
 

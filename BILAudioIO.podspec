@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name                  = 'BILAudioIO'
-  s.version               = '1.0'
+  s.version               = '2.0.0'
   s.summary               = 'Abstract Audio I/O for iOS and OSX'
   s.author                = { 'Yusuke SUGAMIYA' => 'yusuke.dnpp@gmail.com' }
-  s.homepage              = 'https://github.com/Beatrobo/BILAudioIO'
+  s.homepage              = 'https://github.com/dnpp73/DPAudioIO'
   s.source                = { :git => 'https://github.com/Beatrobo/BILAudioIO.git', :tag => "#{s.version}" }
   source_files            = 'BILAudioIO/**/*.{h,m}'
   s.source_files          = source_files
@@ -13,10 +13,8 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
   s.requires_arc          = true
   
-  s.frameworks            = 'AudioToolbox'
-  s.ios.framework         = 'AVFoundation'
-  s.osx.framework         = 'AudioUnit'
-  
+  s.dependency 'DPAudioIO'
+
   s.license = {
    :type => 'MIT',
    :text => <<-LICENSE
